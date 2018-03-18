@@ -151,7 +151,7 @@ export function getNonAotTestConfig(wco: WebpackConfigOptions) {
   }
 
   return {
-    module: { rules: [{ test: /\.ts$/, loader: webpackLoader }] },
+    module: { rules: [{ test: /\.tsx?$/, loader: webpackLoader }] },
     plugins: [_createAotPlugin(wco, pluginOptions, false)]
   };
 }
